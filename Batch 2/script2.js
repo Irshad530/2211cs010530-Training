@@ -1,6 +1,6 @@
-import msg from "./script1.js";
-import greet from "./script1.js";
+import  {collegeName}  from "./script1.js";
+import  {collegeName, Tasking as tasking}  from "./script1.js";
+import total from "./script1.js"
 
-let abc = greet();
-console.log(abc);
-console.log(greet());
+tasking();
+console.log(total);
