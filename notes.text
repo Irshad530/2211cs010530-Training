@@ -1,0 +1,51 @@
+Installation of git:
+1.	Git in it
+2.	Configure of git (git config –global user.name “shiva9111”)
+3.	git config --global user. Email rshivamanish@gmail.com for email
+4.	git remote add origin https://github.com/shiva9111/training.git (to join the local storage)
+5.	git pull origin main
+6.	git add
+7.	git commit -m "nerd-file"( git commit -m “message”)
+8.	To check status (git status)
+9.	Creating new master to pull all branch to master branch (git push -u origin master)
+
+STEPS:
+1.	Create a git-hub account
+2.	Created repo in git-hub
+3.	Open vs code and open terminal in vs code
+4.	Init in git in a local repo
+5.	Git in it command
+6.	Configure user and email to local page
+7.	git config –global user.name “shiva9111”
+8.	git config –global user. Email rshivamanish@gmail.com
+9.	add remote/cloud repo to local repo	
+10.	git remote and origin http-path
+11.	git pull origin (Branch name "Main”)
+12.	covert untracked files to tracked files
+13.	git add
+14.	git commit -m “message”
+15.	check the status 
+16.	git status
+17.	push to cloud  repo
+18.	git push -u origin master(branch-main)
+
+11:00 04-01-2025
+what is JavaScript?
+It is a object based programming language used to convert static page into dynamic page. 
+
+Data Types:
+1. Primitive Data Types
+Number
+String
+Boolean
+Undefined
+null
+Big int
+
+2. Non-Primitive Data Types
+Class
+Object
+Map
+Array
+Function
+Set

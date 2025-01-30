@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drag and Drop</title>
+  <style>
+    .container {
+      width: 200px;
+      height: 300px;
+      border: 2px solid #000;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 20px;
+    }
+    .box {
+      width: 150px;
+      height: 50px;
+      background-color: #00ff66;
+      border: 1px solid #00ff48;
+      margin: 10px;
+      cursor: grab;
+      text-align: center;
+      line-height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="container1">
+    <div class="box" id="box1" draggable="true"></div>
+    <div class="box" id="box2" draggable="true"></div>
+    <div class="box" id="box3" draggable="true"></div>
+    <div class="box" id="box4" draggable="true"></div>
+  </div>
+
+  <script>
+    const boxes = document.querySelectorAll('.box');
+    const containers = document.querySelectorAll('.container');
+
+    boxes.forEach(box => {
+      box.addEventListener('dragstart', dragStart);
+    });
+
+    containers.forEach(container => {
+      container.addEventListener('dragover', dragOver);
+      container.addEventListener('drop', drop);
+    });
+
+    let draggedElement;
+
+    function dragStart(e) {
+      draggedElement = e.target;
+      e.dataTransfer.setData('text/plain', null);
+    }
+
+    function dragOver(e) {
+      e.preventDefault();
+    }
+
+    function drop(e) {
+      e.preventDefault();
+      if (e.target.classList.contains('container')) {
+        e.target.appendChild(draggedElement);
+      }
+    }
+  </script>
+</body>
+</html>
